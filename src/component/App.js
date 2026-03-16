@@ -29,7 +29,9 @@ export default function App() {
           </button>
         </div>
       </nav>
-      <header></header>
+      <header className="relative pt-16 md:pt-24 lg:pt-48">
+        <div className="absolute bottom-8 md:bottom-8 xl:bottom-32 -z-10"></div>
+      </header>
       <main></main>
       <section></section>
     </div>
