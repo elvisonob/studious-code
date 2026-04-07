@@ -5,110 +5,114 @@ import image3 from '../assets/ono3.jpg';
 export default function App() {
   return (
     <div>
-      <div className="bg-[#EDE9D0]">
-        <div className="flex justify-between p-2 ">
-          <button class="md:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              class="w-6 h-6"
-              color="gray-200"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
-          <div>Elvis Studios Practicing</div>
-          <button>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              class="w-6 h-6"
-              color="red"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z"
-              />
-            </svg>
-          </button>
-        </div>
-        <img
-          src={image}
-          alt="protagonist"
-          className="w-40 h-40 mt-5 mx-auto rounded-full object-cover justify-center"
-        />
-        <h3 className="text-red-500 text-xl pt-5 text-center">
-          Elvis Onobhayedo
-        </h3>
-        <p className="p-5 text-xs text-gray-800 text-center">
-          Elvis Onobhayedo is a professional Software Developer and he is the
-          founder of Software Architecture, a technological company that
-          supports businesses in scaling appropriately to serve their customers
-          well and globally. how and why people and social groups use, consume
-          and produce knowledge. Specialisations in knowledge audit and
-          knowledge maps, expertise transfer, knowledge management strategy
-          development, taxonomies, search and information architecture, digital
-          transformation. Author of Principles of Knowledge Auditing:
-          Foundations for Knowledge Management Implementation (Cambridge, MA:
-          MIT Press 2023); co-author The Knowledge Manager's Handbook 2nd
-          edition (London: Kogan Page 2020); and Organising Knowledge:
-          Taxonomies, Knowledge and Organisational Effectiveness (Oxford:
-          Chandos Elsevier 2007).
-        </p>
-        <div className="flex justify-center gap-2">
+      <div className="flex justify-between p-5 ">
+        <button class="md:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            strokeWidth={1.5}
             stroke="currentColor"
-            className="size-6"
+            class="w-6 h-6"
+            color="gray-200"
           >
             <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
             />
           </svg>
+        </button>
+        <div>Elvis Studios Practicing</div>
+        <button>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            strokeWidth={1.5}
             stroke="currentColor"
-            className="size-6"
+            class="w-6 h-6"
+            color="red"
           >
             <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M6 18 18 6M6 6l12 12"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z"
             />
           </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="size-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z"
-            />
-          </svg>
+        </button>
+      </div>
+      <div className="bg-[#EDE9D0] p-3">
+        <div className="md:flex">
+          <img
+            src={image}
+            alt="protagonist"
+            className="w-40 h-40 mt-5 mx-auto rounded-full object-cover justify-center"
+          />
+          <div>
+            <h3 className="text-red-500 text-xl pt-5 md:pl-4 text-center md:text-left">
+              Elvis Onobhayedo
+            </h3>
+            <p className="p-5 text-xs text-gray-800 text-center md:text-justify md:leading-relaxed md:pr-8">
+              Elvis Onobhayedo is a professional Software Developer and he is
+              the founder of Software Architecture, a technological company that
+              supports businesses in scaling appropriately to serve their
+              customers well and globally. how and why people and social groups
+              use, consume and produce knowledge. Specialisations in knowledge
+              audit and knowledge maps, expertise transfer, knowledge management
+              strategy development, taxonomies, search and information
+              architecture, digital transformation. Author of Principles of
+              Knowledge Auditing: Foundations for Knowledge Management
+              Implementation (Cambridge, MA: MIT Press 2023); co-author The
+              Knowledge Manager's Handbook 2nd edition (London: Kogan Page
+              2020); and Organising Knowledge: Taxonomies, Knowledge and
+              Organisational Effectiveness (Oxford: Chandos Elsevier 2007).
+            </p>
+            <div className="flex justify-center gap-2 pl-4 md:justify-start">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
         <div className="px-5 pt-3">
           <img src={image2} />
@@ -143,33 +147,35 @@ export default function App() {
             </li>
           </ul>
         </div>
-        <div className="bg-gray-900 p-5">
-          <div className="text-white pl-5  border border-red-900 bg-red-500 ">
-            Subscribe to Weekly Wrap
-          </div>
-          <div className="border-gray-900">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6"
-              color="white"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
-              />
-            </svg>
-
-            <p className="text-white">Enter your Email Address</p>
-          </div>
-          <div className="text-white bg-[#D10602] text-center p-3">
-            Subscribe
-          </div>
+      </div>
+      <div className="bg-gray-900 py-10 px-5 mt-5">
+        <div className="text-white pl-5 w-fit px-2 bg-black mb-4 font-bold ">
+          Subscribe to Weekly Wrap
         </div>
+        <div className=" flex p-2 gap-14 border border-gray-600 mb-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+            color="#CCCCCC"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+            />
+          </svg>
+
+          <p className=" text-[#CCCCCC] ">Enter your Email Address</p>
+        </div>
+        <div className="text-white bg-[#D10602] text-center p-3">Subscribe</div>
+        <footer className="text-white mt-16 space-y-4 text-xs text-center">
+          <p>© Copyright RealKM Cooperative Limited 2015-2026</p>
+          <p>Rights Reserved | Privacy Statement</p>
+        </footer>
       </div>
     </div>
   );
