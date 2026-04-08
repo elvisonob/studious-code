@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div>
       <div className="flex justify-between p-5 ">
-        <button class="md:hidden">
+        <button>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -23,7 +23,9 @@ export default function App() {
             />
           </svg>
         </button>
-        <div>Elvis Studios Practicing</div>
+        <div className="md:flex-1 text-center md:text-left ml-3">
+          Elvis Studios Practicing
+        </div>
         <button>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -114,24 +116,29 @@ export default function App() {
             </div>
           </div>
         </div>
-        <div className="px-5 pt-3">
-          <img src={image2} />
-          <p className="text-red-500 text-lg font-bold">
-            ISKO Singapore hybrid event: The role of KM in realising the promise
-            of generative AI with Stuart French
-          </p>
+        <div className="px-5 pt-3 flex flex-col md:flex-row md:gap-4 md:mt-20">
+          <div className="md:w-1/2">
+            <img src={image2} className="w-full" />
+          </div>
+          <div className="md:w-1/2">
+            <p className="text-red-500 text-lg font-bold ">
+              ISKO Singapore hybrid event: The role of KM in realising the
+              promise of generative AI with Stuart French
+            </p>
+          </div>
         </div>
-        <div className="px-5 pt-3">
-          <img src={image3} />
-          <p className="text-red-500 text-lg font-bold">
+        <div className="px-5 pt-3 flex flex-col md:flex-row md:gap-4 md:mt-20 ">
+          <img src={image3} className="md:w-1/2" />
+
+          <p className="text-red-500 text-lg font-bold md:w-1/2">
             Survey on ethics in knowledge management
           </p>
         </div>
-        <div className="px-5">
+        <div className="px-2">
           <h3 className="w-fit bg-red-500 text-white font-bold px-2 py-1 mt-4">
             Our Purpose
           </h3>
-          <ul className="list-disc pl-4 text-xs space-y-2 mt-3">
+          <ul className="list-disc list-inside leading-relaxed  text-xs space-y-3 mt-3">
             <li>
               Publishing concise, practically-oriented articles to inform
               managers and knowledge management (KM) practitioners about the
@@ -149,34 +156,52 @@ export default function App() {
         </div>
       </div>
       <div className="bg-gray-900 py-10 px-5 mt-5">
-        <div className="text-white pl-5 w-fit px-2 bg-black mb-4 font-bold ">
-          Subscribe to Weekly Wrap
-        </div>
-        <div className=" flex p-2 gap-14 border border-gray-600 mb-3">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-6"
-            color="#CCCCCC"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
-            />
-          </svg>
+        <div className="md:flex gap-6">
+          <div className="md:w-1/3">
+            <div className="text-white pl-5 w-fit px-2 bg-black mb-4 font-bold ">
+              Subscribe to Weekly Wrap
+            </div>
+            <div className=" flex p-2 gap-14 md:gap-2 border border-gray-600 mb-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+                color="#CCCCCC"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                />
+              </svg>
 
-          <p className=" text-[#CCCCCC] ">Enter your Email Address</p>
+              <p className=" text-[#CCCCCC] md:text-xs text-left ">
+                Enter your Email Address
+              </p>
+            </div>
+            <div className="text-white bg-[#D10602] text-center p-1">
+              Subscribe
+            </div>
+          </div>
+          <div className="md:w-1/2">
+            <div className="text-white pl-5 w-fit px-2 bg-black mb-4 font-bold mt-5 md:mt-0">
+              Follow us
+            </div>
+            <div>
+              <p className="text-white text-xs text-center">
+                We build this city, we build this city on rock and roll
+              </p>
+            </div>
+          </div>
         </div>
-        <div className="text-white bg-[#D10602] text-center p-3">Subscribe</div>
-        <footer className="text-white mt-16 space-y-4 text-xs text-center">
-          <p>© Copyright RealKM Cooperative Limited 2015-2026</p>
-          <p>Rights Reserved | Privacy Statement</p>
-        </footer>
       </div>
+      <footer className=" bg-black p-5 text-white  space-y-4 text-xs text-center md:text-left md:flex md:space-y-0 md:gap-2 md:p-8 md:pl-2">
+        <p>© Copyright RealKM Cooperative Limited 2015-2026</p>
+        <p>All Rights Reserved | Privacy Statement</p>
+      </footer>
     </div>
   );
 }
