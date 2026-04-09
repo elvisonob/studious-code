@@ -44,97 +44,100 @@ export default function App() {
           </svg>
         </button>
       </div>
-      <div className="bg-[#EDE9D0] p-3">
-        <div className="md:flex">
-          <img
-            src={image}
-            alt="protagonist"
-            className="w-40 h-40 mt-5 mx-auto rounded-full object-cover justify-center"
-          />
-          <div>
-            <h3 className="text-red-500 text-xl pt-5 md:pl-4 text-center md:text-left">
-              Elvis Onobhayedo
-            </h3>
-            <p className="p-5 text-xs text-gray-800 text-center md:text-justify md:leading-relaxed md:pr-8">
-              Elvis Onobhayedo is a professional Software Developer and he is
-              the founder of Software Architecture, a technological company that
-              supports businesses in scaling appropriately to serve their
-              customers well and globally. how and why people and social groups
-              use, consume and produce knowledge. Specialisations in knowledge
-              audit and knowledge maps, expertise transfer, knowledge management
-              strategy development, taxonomies, search and information
-              architecture, digital transformation. Author of Principles of
-              Knowledge Auditing: Foundations for Knowledge Management
-              Implementation (Cambridge, MA: MIT Press 2023); co-author The
-              Knowledge Manager's Handbook 2nd edition (London: Kogan Page
-              2020); and Organising Knowledge: Taxonomies, Knowledge and
-              Organisational Effectiveness (Oxford: Chandos Elsevier 2007).
-            </p>
-            <div className="flex justify-center gap-2 pl-4 md:justify-start">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="size-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="size-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 18 18 6M6 6l12 12"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="size-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z"
-                />
-              </svg>
+      <div className="lg:flex">
+        <div className="md:mx-5 bg-[#EDE9D0] p-3 lg:w-[60%]">
+          <div className="md:flex">
+            <img
+              src={image}
+              alt="protagonist"
+              className="w-40 h-40 mt-5 mx-auto rounded-full object-cover justify-center"
+            />
+            <div>
+              <h3 className="text-red-500 text-xl pt-5 md:pl-4 text-center md:text-left">
+                Elvis Onobhayedo
+              </h3>
+              <p className="p-5 text-xs text-gray-800 text-center md:text-justify md:leading-relaxed md:pr-8">
+                Elvis Onobhayedo is a professional Software Developer and he is
+                the founder of Software Architecture, a technological company
+                that supports businesses in scaling appropriately to serve their
+                customers well and globally. how and why people and social
+                groups use, consume and produce knowledge. Specialisations in
+                knowledge audit and knowledge maps, expertise transfer,
+                knowledge management strategy development, taxonomies, search
+                and information architecture, digital transformation. Author of
+                Principles of Knowledge Auditing: Foundations for Knowledge
+                Management Implementation (Cambridge, MA: MIT Press 2023);
+                co-author The Knowledge Manager's Handbook 2nd edition (London:
+                Kogan Page 2020); and Organising Knowledge: Taxonomies,
+                Knowledge and Organisational Effectiveness (Oxford: Chandos
+                Elsevier 2007).
+              </p>
+              <div className="flex justify-center gap-2 pl-4 md:justify-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="size-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="size-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18 18 6M6 6l12 12"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="size-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="px-5 pt-3 flex flex-col md:flex-row md:gap-4 md:mt-20">
-          <div className="md:w-1/2">
-            <img src={image2} className="w-full" />
+          <div className="px-5 pt-3 flex flex-col md:flex-row md:gap-4 md:mt-20">
+            <div className="md:w-1/2">
+              <img src={image2} className="w-full" />
+            </div>
+            <div className="md:w-1/2">
+              <p className="text-red-500 text-lg font-bold ">
+                ISKO Singapore hybrid event: The role of KM in realising the
+                promise of generative AI with Stuart French
+              </p>
+            </div>
           </div>
-          <div className="md:w-1/2">
-            <p className="text-red-500 text-lg font-bold ">
-              ISKO Singapore hybrid event: The role of KM in realising the
-              promise of generative AI with Stuart French
+          <div className="px-5 pt-3 flex flex-col md:flex-row md:gap-4 md:mt-20 ">
+            <img src={image3} className="md:w-1/2" />
+
+            <p className="text-red-500 text-lg font-bold md:w-1/2">
+              Survey on ethics in knowledge management
             </p>
           </div>
         </div>
-        <div className="px-5 pt-3 flex flex-col md:flex-row md:gap-4 md:mt-20 ">
-          <img src={image3} className="md:w-1/2" />
-
-          <p className="text-red-500 text-lg font-bold md:w-1/2">
-            Survey on ethics in knowledge management
-          </p>
-        </div>
-        <div className="px-2">
+        <div className=" p-7 md:mx-5 mt-4 bg-[#EDE9D0] lg:w-[35%] ">
           <h3 className="w-fit bg-red-500 text-white font-bold px-2 py-1 mt-4">
             Our Purpose
           </h3>
@@ -155,8 +158,9 @@ export default function App() {
           </ul>
         </div>
       </div>
+
       <div className="bg-gray-900 py-10 px-5 mt-5">
-        <div className="md:flex gap-6">
+        <div className="md:flex gap-6 mt-10">
           <div className="md:w-1/3">
             <div className="text-white pl-5 w-fit px-2 bg-black mb-4 font-bold ">
               Subscribe to Weekly Wrap
@@ -191,7 +195,7 @@ export default function App() {
               Follow us
             </div>
             <div>
-              <p className="text-white text-xs text-center">
+              <p className="text-left text-white text-xs">
                 We build this city, we build this city on rock and roll
               </p>
             </div>
