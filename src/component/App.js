@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div>
       <div className="flex justify-between p-5 ">
-        <button>
+        <button className="lg:hidden flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -23,26 +23,38 @@ export default function App() {
             />
           </svg>
         </button>
-        <div className="md:flex-1 text-center md:text-left ml-3">
-          Elvis Studios Practicing
+        <div>
+          <div className="md:flex-1 text-center md:text-left ml-3 lg:text-[50px]">
+            Elvis Studios Practicing
+          </div>
+          <button className="lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="w-6 h-6"
+              color="red"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z"
+              />
+            </svg>
+          </button>
+          <div className="lg:bg-black lg:text-white lg:mb-5">
+            <ul className="hidden lg:flex gap-6 p-10">
+              <li>ABCs of KM</li>
+              <li>Brain Power</li>
+              <li>Systems & Complexity</li>
+              <li>Analysis & Counterpoints</li>
+              <li>News & Community</li>
+              <li>Patron Showcase</li>
+            </ul>
+          </div>
         </div>
-        <button>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            class="w-6 h-6"
-            color="red"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z"
-            />
-          </svg>
-        </button>
       </div>
       <div className="lg:flex">
         <div className="md:mx-5 bg-[#EDE9D0] p-3 lg:w-[60%]">

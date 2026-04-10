@@ -6,6 +6,9 @@ module.exports = {
       colors: {
         myAmber: '#84cc16',
       },
+      screens: {
+        cb: '990px',
+      },
     },
   },
   plugins: [require('@tailwindcss/forms')],
