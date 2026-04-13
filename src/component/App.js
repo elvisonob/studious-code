@@ -1,19 +1,76 @@
 import image from '../assets/ono.jpg';
 import image2 from '../assets/ono2.jpg';
 import image3 from '../assets/ono3.jpg';
+import { useState } from 'react';
 
 export default function App() {
+  const [menuBar, setMenuBar] = useState(false);
+
+  const openMenuBar = () => {
+    setMenuBar(true);
+  };
+
+  const closeMenuBar = () => {
+    setMenuBar(false);
+  };
   return (
-    <div className="m-5 bg-white">
+    <div className="w-full bg-white">
+      {menuBar && (
+        <div className=" bg-black text-white mb-5">
+          <div className="fixed inset-0 w-full h-full bg-black z-50 overflow-y-auto">
+            <div className="flex flex-col px-8 text-gray-500">
+              <button onClick={closeMenuBar} className="text-red-500 mt-2">
+                X
+              </button>
+              <div className="flex justify-between px-3 py-1 px-8 inline-block border border-gray-500 rounded-xl mt-6">
+                <div>Search ...</div>
+                <button className="lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <ul className="flex flex-col gap-6 p-5">
+              <li>Home</li>
+              <li>ABCs of KM</li>
+              <li>Brain Power</li>
+              <li>Systems & Complexity</li>
+              <li>Analysis & Counterpoints</li>
+              <li>News & Community</li>
+              <li>Patron Showcase</li>
+              <li>About us</li>
+              <li>Patrons</li>
+              <li>Subscribe</li>
+              <li>Write for us</li>
+              <li>Republishing guidelines</li>
+              <li>Community standards</li>
+              <li>Privacy statement</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
+      )}
       <div className="xl:mx-40">
         <div className="flex justify-between p-5 lg:flex-col ">
-          <button className="lg:hidden">
+          <button className="lg:hidden" onClick={openMenuBar}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              class="w-6 h-6"
+              className="w-6 h-6"
               color="gray-200"
             >
               <path
@@ -34,7 +91,7 @@ export default function App() {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              class="w-6 h-6"
+              className="w-6 h-6"
               color="red"
             >
               <path
@@ -46,7 +103,7 @@ export default function App() {
             </svg>
           </button>
           <div className="hidden lg:block lg:bg-black lg:text-white lg:mb-5">
-            <ul className="hidden lg:flex gap-6 p-5">
+            <ul className="hidden lg:flex gap-6 p-5 justify-center">
               <li>ABCs of KM</li>
               <li>Brain Power</li>
               <li>Systems & Complexity</li>
@@ -57,12 +114,12 @@ export default function App() {
           </div>
         </div>
         <div className="lg:flex">
-          <div className="md:mx-5 bg-[#EDE9D0] p-3 lg:w-[60%]">
+          <div className="md:mx-5 bg-[#EDE9D0] p-3 lg:w-[60%] px-0">
             <div className="md:flex">
               <img
                 src={image}
                 alt="protagonist"
-                className="w-40 h-40 mt-5 mx-auto rounded-full object-cover justify-center"
+                className="w-40 h-40 mt-5 mx-auto rounded-full object-cover md:ml-5 justify-center"
               />
 
               <div className="md:flex-col">
@@ -150,8 +207,8 @@ export default function App() {
               </p>
             </div>
           </div>
-          <div className=" p-7 md:mx-5 mt-4 bg-[#EDE9D0] lg:w-[35%] ">
-            <h3 className="w-fit bg-red-500 text-white font-bold px-2 py-1 mt-4">
+          <div className=" p-7 md:mx-5  bg-[#EDE9D0] lg:w-[35%] lg:h-[50%] ">
+            <h3 className="w-fit bg-red-500 text-white font-bold px-2 py-1 mt-0">
               Our Purpose
             </h3>
             <ul className="list-disc list-inside leading-relaxed  text-xs space-y-3 mt-3">
@@ -172,7 +229,7 @@ export default function App() {
           </div>
         </div>
       </div>
-      <div className="bg-gray-900 py-10 px-5 mt-5">
+      <div className="bg-gray-900 py-10 px-5 mt-5 xl:pl-40">
         <div className="md:flex gap-6 mt-10">
           <div className="md:w-1/3">
             <div className="text-white pl-5 w-fit px-2 bg-black mb-4 font-bold ">
@@ -216,7 +273,7 @@ export default function App() {
         </div>
       </div>
 
-      <footer className=" bg-black p-5 text-white  space-y-4 text-xs text-center md:text-left md:flex md:space-y-0 md:gap-2 md:p-8 md:pl-2">
+      <footer className=" bg-black p-5 text-white  space-y-4 text-xs text-center md:text-left md:flex md:space-y-0 md:gap-2 md:p-8 md:pl-2 xl:pl-40">
         <p>© Copyright RealKM Cooperative Limited 2015-2026</p>
         <p>All Rights Reserved | Privacy Statement</p>
       </footer>
