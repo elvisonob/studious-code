@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body {
-  background-color: grey;
+@media (min-width: 1280px) {
+  body {
+    background-color: grey;
+    margin: 20px;
+  }
 }
