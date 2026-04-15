@@ -17,7 +17,7 @@ export default function App() {
     <div className="w-full bg-white">
       <div className="hidden xl:block bg-black text-white">
         <ul className="flex justify-end text-xs pr-20 gap-6 p-2 mt-2">
-          <li>Home</li>
+          <li>Homes</li>
           <li>ABCs of KM</li>
           <li>Brain Powers</li>
           <li>Systems & Complexity</li>
