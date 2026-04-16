@@ -1,6 +1,7 @@
-import image from '../assets/ono.jpg';
-import image2 from '../assets/ono2.jpg';
-import image3 from '../assets/ono3.jpg';
+import image from './assets/ono.jpg';
+import image2 from './assets/ono2.jpg';
+import image3 from './assets/ono3.jpg';
+import Navbar from './component/Navbar/Navbar';
 import { useState } from 'react';
 
 export default function App() {
@@ -15,19 +16,7 @@ export default function App() {
   };
   return (
     <div className="w-full bg-white">
-      <div className="hidden xl:block bg-black text-white">
-        <ul className="flex justify-end text-xs pr-20 gap-6 p-2 mt-2">
-          <li>Homes</li>
-          <li>ABCs of KM</li>
-          <li>Brain Powers</li>
-          <li>Systems & Complexity</li>
-          <li>Analysis & Counterpoints</li>
-          <li>News & Community</li>
-          <li>Patron Showcase</li>
-          <li>About us</li>
-          <li>Patrons</li>
-        </ul>
-      </div>
+      <Navbar />
       {menuBar && (
         <div className=" bg-black text-white mb-5">
           <div className="fixed inset-0 w-full h-full bg-black z-50 overflow-y-auto">
