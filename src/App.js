@@ -225,7 +225,7 @@ export default function App() {
               <li>
                 Leading and supporting actions and activities that encourage and
                 facilitate the application of these research and case scenario
-                findings in KLM practice.
+                findings in practice.
               </li>
             </ul>
           </div>
