@@ -46,7 +46,7 @@ export default function App() {
             </div>
             <ul className="flex flex-col gap-6 p-5">
               <li>Home</li>
-              <li>ABCs of KLM</li>
+              <li>ABCDs of KLM</li>
               <li>Brain Power</li>
               <li>Systems & Complexity</li>
               <li>Analysis & Counterpoints</li>
