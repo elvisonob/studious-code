@@ -47,7 +47,7 @@ export default function App() {
             <ul className="flex flex-col gap-6 p-5">
               <li>Home</li>
               <li>ABCDs of KLM</li>
-              <li>Brain Power</li>
+              <li>Mind Powers</li>
               <li>Systems & Complexity</li>
               <li>Analysis & Counterpoints</li>
               <li>News & Community</li>
